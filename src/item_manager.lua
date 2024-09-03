@@ -152,7 +152,7 @@ end
 
 function ItemManager.get_priority_item()
    local settings = Settings.get()
-   if settings.loot_priority == 0 then 
+   if settings.loot_priority == 0 then  -- Assuming 0 is "Closest First"
       return ItemManager.get_nearby_item()
    else
       return ItemManager.get_best_item()
