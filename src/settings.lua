@@ -5,6 +5,7 @@ local Settings = {}
 local settings = {
    enabled = false,
    behavior = 0,
+   loot_priority = 0,
    rarity = 0,
    distance = 2,
    skip_dropped = false,

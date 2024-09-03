@@ -11,6 +11,10 @@ local gui_options = {
     behaviors = {
         "Always",
         "Orbwalk"
+    },
+    loot_priority = {
+        "Closest First",
+        "Best First"
     }
 }
 

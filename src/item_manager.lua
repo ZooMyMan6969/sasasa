@@ -150,6 +150,14 @@ function ItemManager.check_want_item(item, ignore_distance)
    return true
 end
 
+function ItemManager.get_priority_item()
+   local settings = Settings.get()
+   if settings.loot_priority == 0 then 
+      return ItemManager.get_nearby_item()
+   else
+      return ItemManager.get_best_item()
+   end
+end
 
 function ItemManager.get_nearby_item()
    local items = actors_manager:get_all_items()
